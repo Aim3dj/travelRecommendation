@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSmart | About Us</title>
+
+    <link rel="stylesheet" href="travel_recommendation.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <a href="/travel_recommendation.html">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h2>TravelSmart</h2>
+            </a>
+        </div>
+
+        <nav>
+            <a href="/travel_recommendation.html">Home</a>
+            <a href="/aboutus.html">About Us</a>
+            <a href="/contactus.html">Contact Us</a>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="search-btn-icon" onclick="searchDestination()">
+                <i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button onclick="searchDestination()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="container">
+
+            <h1 class="title">ABOUT US</h1>
+
+            <div class="about-box">
+                <p>
+                    Welcome to TravelBloom! We are a team of passionate travel
+                    enthusiasts dedicated to helping people discover amazing
+                    destinations around the world.
+                </p>
+
+                <p>
+                    Our mission is to provide unforgettable travel experiences,
+                    personalized recommendations, and trusted guidance that inspire
+                    exploration and adventure.
+                </p>
+
+                <p>
+                    We value integrity, innovation, customer satisfaction, and
+                    teamwork. By putting travelers first, we strive to make every
+                    journey memorable and stress-free.
+                </p>
+            </div>
+
+            <div class="team-section">
+
+                <div class="team-title">
+                    Our Team
+                </div>
+
+                <div class="team-members">
+
+                    <div class="member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>John Doe</h3>
+                        <p>
+                            John is responsible for overall company strategy and
+                            vision.
+                        </p>
+                        <span class="role">CEO</span>
+                    </div>
+
+                    <div class="member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Celina Thomas</h3>
+                        <p>
+                            Celina leads technical operations and innovation
+                            initiatives.
+                        </p>
+                        <span class="role">Team Lead</span>
+                    </div>
+
+                    <div class="member">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Mike Tyson</h3>
+                        <p>
+                            Mike manages project delivery and client relationships.
+                        </p>
+                        <span class="role">Delivery Head</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

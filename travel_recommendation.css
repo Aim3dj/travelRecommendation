@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background-image: url('images/zhai-ken-airplane.jpg');
+    background-size: cover;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    height:70px;
+    background:#072b3a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.logo i{
+    font-size:35px;
+    margin-right:10px;
+}
+
+.logo h2{
+    font-style:italic;
+    font-size:22px;
+}
+
+.logo a{
+    font-style:italic;
+    font-size:22px;
+    color:white;
+    text-decoration: none;
+    display: contents;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+.search-container{
+    display:flex;
+    align-items:center;
+    background:white;
+    border-radius:30px;
+    padding:8px;
+}
+
+.search-container input{
+    border:none;
+    outline:none;
+    width:280px;
+    padding:10px;
+    font-size:15px;
+}
+
+.search-container button{
+    border:none;
+    background:#1c8c8c;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    margin-left:8px;
+    cursor:pointer;
+}
+
+#search-btn-icon{
+    /* border-radius: 90%; */
+    width: 5px;
+    height: 37px;
+    background: transparent;
+}
+
+#search-icon{
+    color: dodgerblue;
+}
+
+/* Hero Section */
+
+.hero{
+    height:calc(100vh - 70px);
+    background-image:url("images/zhai-ken-airplane.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.25);
+}
+
+/* Social Icons */
+
+.social-icons{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    z-index:2;
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    margin:18px 0;
+}
+
+/* Content */
+
+.overlay-content{
+    position:absolute;
+    left:90px;
+    top:170px;
+    color:white;
+    z-index:2;
+}
+
+.title-box{
+    border:4px solid rgba(89, 81, 126, 0);
+    padding:20px;
+    /* width:470px; */
+}
+
+.title-box h1{
+    font-size:62px;
+    line-height:1.1;
+    font-weight:700;
+}
+
+.description-box{
+    border:4px solid rgba(89, 81, 126, 0);
+    width:680px;
+    margin-top:15px;
+    border-radius: 10px;
+    padding:10px;
+    background:rgba(0,0,0,0.25);
+}
+
+.description-box p{
+    font-size:16px;
+    line-height:1.3;
+}
+
+.book-btn{
+    width: 30%;
+    margin-top:15px;
+    background:#006d5b;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+/* aboutus */
+
+/* Main Content */
+    .container{
+        width:90%;
+        margin:auto;
+        padding:40px 0;
+    }
+
+    .title{
+        font-size:5rem;
+        font-weight:bold;
+        margin-bottom:20px;
+        color:white;
+    }
+
+    .about-box{
+        background:rgba(0,0,0,0.55);
+        padding:30px;
+        border-radius:10px;
+        line-height:1.8;
+        margin-bottom:40px;
+        color:white;
+        text-align: center;
+    }
+
+    /* Team Section */
+    .team-section{
+        display:flex;
+        align-items:center;
+        gap:50px;
+        background:rgba(0,0,0,0.55);
+        padding:40px;
+        border-radius:10px;
+        color:white;
+    }
+
+    .team-title{
+        font-size:4rem;
+        font-weight:bold;
+        min-width:250px;
+        color: white;
+    }
+
+    .team-members{
+        /* display:flex;
+        gap:30px;
+        flex-wrap:wrap; */
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .member{
+        text-align:center;
+        max-width:250px;
+    }
+
+    .member i{
+        font-size:60px;
+        margin-bottom:15px;
+    }
+
+    .member h3{
+        margin-bottom:10px;
+        font-size:1.7rem;
+    }
+
+    .member p{
+        margin-bottom:15px;
+    }
+
+    .role{
+        background:#0d5c87;
+        display:inline-block;
+        padding:10px 25px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+    @media(max-width:900px){
+
+        .title{
+            font-size:3rem;
+        }
+
+        .team-section{
+            flex-direction:column;
+            text-align:center;
+        }
+
+        .team-title{
+            min-width:auto;
+        }
+
+        .team-members{
+            justify-content:center;
+        }
+
+        .social-icons{
+            display:none;
+        }
+    }
+
+/* contactus */
+
+/* Main Section */
+    .contact-container{
+        width:90%;
+        margin:auto;
+        min-height:85vh;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:50px;
+    }
+
+    /* Left Content */
+    .contact-info{
+        flex:1;
+        color: white;
+    }
+
+    .contact-info h1{
+        font-size:5.5rem;
+        margin-bottom:20px;
+        font-weight:700;
+    }
+
+    .contact-info p{
+        font-size:2rem;
+    }
+
+    /* Form */
+    .contact-form{
+        width:500px;
+        background:rgba(0,0,0,0.25);
+        backdrop-filter:blur(4px);
+        border:2px solid rgba(255,255,255,0.25);
+        padding:30px;
+        border-radius:8px;
+        color: greenyellow;
+    }
+
+    .form-group{
+        margin-bottom:20px;
+    }
+
+    .form-group label{
+        display:block;
+        margin-bottom:8px;
+        font-size:18px;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        width:100%;
+        padding:14px;
+        background:transparent;
+        border:1px solid rgba(255,255,255,0.4);
+        border-radius:5px;
+        color:white;
+        font-size:16px;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder{
+        color:rgba(255,255,255,0.7);
+    }
+
+    .form-group textarea{
+        height:120px;
+        resize:none;
+    }
+
+    button{
+        /* width:100%; */
+        padding:14px;
+        border:none;
+        border-radius:5px;
+        background:#0b8b83;
+        color:white;
+        font-size:15px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        background:#08736d;
+    }
+
+    @media(max-width:992px){
+
+        .contact-container{
+            flex-direction:column;
+            text-align:center;
+            padding:50px 0;
+        }
+
+        .contact-info h1{
+            font-size:4rem;
+        }
+
+        .contact-form{
+            width:100%;
+            max-width:600px;
+        }
+
+        .social-icons{
+            display:none;
+        }
+    }
