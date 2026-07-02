@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelSmart | Contact Us</title>
+    <title>TravelSmart - Contact Us</title>
 
     <link rel="stylesheet" href="travel_recommendation.css">
 
@@ -17,7 +17,7 @@
     <header>
         <div class="logo">
             <a href="/travel_recommendation.html">
-                <i class="fa-solid fa-earth-americas"></i>
+                <img src="images/travel-smart-logo.jpg" alt="">
                 <h2>TravelSmart</h2>
             </a>
         </div>
@@ -27,24 +27,15 @@
             <a href="/aboutus.html">About Us</a>
             <a href="/contactus.html">Contact Us</a>
         </nav>
-
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
-            <button id="search-btn-icon" onclick="searchDestination()">
-                <i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
-            </button>
-            <button onclick="searchDestination()">Search</button>
-            <button onclick="clearSearch()">Clear</button>
-        </div>
     </header>
-    
+
     <section class="hero">
         <!-- Social Media -->
         <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Den_CA"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
         </div>
 
         <!-- Contact Section -->
@@ -79,7 +70,7 @@
                                 required></textarea>
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="thankyou()">Submit</button>
 
                 </form>
 
@@ -87,5 +78,10 @@
 
         </section>
     </section>
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+    </script>
 </body>
 </html>
